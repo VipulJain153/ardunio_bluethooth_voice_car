@@ -23,7 +23,8 @@ void move(auto dir){
 
 void setup() {
   Serial.begin(9600);         // Initialize serial communication with the computer
-  bluetooth.begin(9600);      // Initialize serial communication with the Bluetooth module
+  bluetooth.begin(9600); 
+  AFMS.begin();// Initialize serial communication with the Bluetooth module
 }
 
 void sendResponse(const String& response) {
