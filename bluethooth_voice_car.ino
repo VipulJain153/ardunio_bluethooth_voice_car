@@ -18,6 +18,7 @@ void move(auto dir){
     myMotorTwo->run(dir);
     myMotorThree->run(dir);
     myMotorFourth->run(dir);
+    delay(1000);
 }
 
 void setup() {
@@ -43,11 +44,13 @@ void loop() {
     myMotorTwo->run(BACKWARD);
     myMotorThree->run(FORWARD);
     myMotorFourth->run(BACKWARD);
+    delay(1000);
   } else if (command=="right" || command=="move right"){
     myMotorOne->run(BACKWARD);
     myMotorTwo->run(FORWARD);
     myMotorThree->run(BACKWARD);
     myMotorFourth->run(FORWARD);
+    delay(1000);
   } else {
     move(RELEASE);
   }
